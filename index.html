@@ -1,60 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartFit - Home Fitness Companion</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartFit</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>SmartFit</h1>
-        <p>Your Home Fitness Companion</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#workouts">Workouts</a>
-            <a href="#yoga">Yoga</a>
-            <a href="#meditation">Meditation</a>
-            <a href="#progress">Progress Tracker</a>
-        </nav>
-    </header>
+  <header class="animate">
+    <h1>SmartFit</h1>
+    <p>Your Home Fitness Companion</p>
+    <nav>
+      <a href="#workouts">Workouts</a>
+      <a href="#yoga">Yoga & Meditation</a>
+      <a href="#tracker">Progress Tracker</a>
+      <a href="#hydration">Water Tracker</a>
+    </nav>
+  </header>
 
-    <section id="home">
-        <h2>Welcome to SmartFit</h2>
-        <p>Achieve your fitness goals from home with guided workouts, yoga, meditation, and more!</p>
-    </section>
+  <section id="workouts" class="animate">
+    <h2>Workouts</h2>
+    <p>Guided video workouts by male trainers</p>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/EXJt0bXk5ZA" title="Push-Up"></iframe>
+      <iframe src="https://www.youtube.com/embed/bqlCe95BnpA" title="Plank"></iframe>
+      <iframe src="https://www.youtube.com/embed/YaXPRqUwItQ" title="Dumbbell Row"></iframe>
+      <iframe src="https://www.youtube.com/embed/2q8N6P6YWl8" title="Squat"></iframe>
+    </div>
+  </section>
 
-    <section id="workouts">
-        <h2>Workouts</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/TYJzcUvS_NU" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/2pLT-olgUJs" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+  <section id="yoga" class="animate">
+    <h2>Yoga & Meditation</h2>
+    <p>Calm your mind and stretch with yoga for men</p>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/6T6gF9PpX9Q" title="Yoga for Men"></iframe>
+      <iframe src="https://www.youtube.com/embed/1vx8iUvfyCY" title="Guided Meditation for Men"></iframe>
+    </div>
+  </section>
 
-    <section id="yoga">
-        <h2>Yoga</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/v7AYKMP6rOE" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+  <section id="tracker" class="animate">
+    <h2>Workout Progress Tracker</h2>
+    <form>
+      <label for="exercise">Exercise Done:</label>
+      <input type="text" id="exercise" name="exercise" placeholder="e.g. 50 push-ups" />
+      <button type="submit">Save Workout</button>
+    </form>
+  </section>
 
-    <section id="meditation">
-        <h2>Meditation</h2>
-        <div class="video-grid">
-            <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
+  <section id="hydration" class="animate">
+    <h2>Water Intake Tracker</h2>
+    <form>
+      <label for="water">Glasses Drank Today:</label>
+      <input type="number" id="water" name="water" min="0" />
+      <button type="submit">Save Water Log</button>
+    </form>
+  </section>
 
-    <section id="progress">
-        <h2>Progress Tracker</h2>
-        <p>Track your workouts and meditation sessions manually or with your smartwatch.</p>
-    </section>
-
-    <footer>
-        <p>Made by Adarsh © 2025</p>
-    </footer>
-
+  <footer class="animate">
+    <p>Made by Adarsh © 2025</p>
+  </footer>
 </body>
 </html>
